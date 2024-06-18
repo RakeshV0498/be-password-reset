@@ -28,6 +28,7 @@ forgotPassRouter.post("/", async (req, res) => {
 
     const newMailOptions = {
       ...mailOptions,
+      to: user.email,
       html: `
       <p>Hello,</p>
       <p>You have requested to reset your password. Please click on the following link to reset your password:</p>
