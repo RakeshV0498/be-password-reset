@@ -45,7 +45,7 @@ loginRouter.post("/", async (req, res) => {
   } else {
     return res
       .status(404)
-      .send({ msg: "User Already registered, Please Login", code: -2 });
+      .send({ msg: "User not found, Please register", code: -2 });
   }
 });
 
